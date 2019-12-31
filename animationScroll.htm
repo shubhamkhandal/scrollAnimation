@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation Scroll</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!--fontAwesome icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+     
+    <!--animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: monospace;
+    }
+
+    header{
+        background: rgb(68, 66, 66);
+        padding: 5px;
+        
+    }
+    header ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    header ul li{
+        list-style: none;
+        
+    }
+    header ul li a{
+        font-size: 1.5rem;
+    }
+
+    main{
+        width: 100%;
+        height: 100vh;
+        background: url('/1.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10px;
+        
+        
+    }
+    main h1{
+        margin-top: 80px;
+        color: white;
+        font-size: 3rem;
+        text-shadow: 2px 2px 3px #000;
+    }
+    main p{
+        color: white;
+        text-shadow: 1px 1px 2px #000;
+        margin: 30px 0;
+    }
+</style>
+</head>
+<body>
+    <header>
+      
+            <ul>
+                <li><a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a></li>
+                <li><a href="#">
+                     <i class="fab fa-instagram"></i>
+                </a></li>
+                <li><a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a></li>
+                <li><a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a></li>
+            </ul>
+       
+    </header>
+   
+    <nav class="navbar navbar-expand-lg bg-dark">
+            <a href="#" class="navbar-brand text-capitalize">animate sroll</a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navBar">
+                <span class="fas fa-bars text-primary"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navBar">
+                <ul class="navbar-nav ml-auto text-capitalize">
+                    <li class="nav-item"><a href="#" class="nav-link">home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">about</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">contact</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">gallery</a></li>
+                </ul>
+            </div>
+    </nav>
+
+
+<!--main -->
+    <main class="text-capitalize text-center">
+            <h1 id="heading">animate scroll</h1>
+            <p id="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure dolores tempore hic quos magnam eum!</p>
+            
+            <button class="btn btn-outline-danger">how to</button>
+    </main>
+<!--end of the main-->
+
+<!--start the section-->
+   <section class="my-5">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-4 col-10 offset-1 offset-md-0 mt-3">
+                   <div class="card"id="card-one">
+                       <img src="/1.jpg" alt="" class="img-fluid">
+                       <div class="card-body">
+                           <h1 class="card-title">just love</h1>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cum?</p>
+                       </div>
+                       <div class="card-footer">
+                           <button class="btn btn-outline-danger">read more</button>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="col-md-4 col-10 offset-1 offset-md-0 mt-3">
+                <div class="card" id="card-two">
+                    <img src="/1.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h1 class="card-title">just love</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cum?</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-danger">read more</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 col-10 offset-1 offset-md-0 mt-3">
+                <div class="card" id="card-three">
+                    <img src="/1.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h1 class="card-title">just love</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cum?</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-danger">read more</button>
+                    </div>
+                </div>
+            </div>
+           </div>
+       </div>
+   </section>
+   <!--end of the section-->
+
+   <!--start new section-->
+   <section class="my-4 bg-secondary">
+      <div class="container">
+          <div class="row">
+              <div class="col-10 col-lg-12 offset-1 offset-lg-0 p-4 text-center">
+                   <h1 class="text-capitalize text-white" id="sec-heading">love is a very lovely</h1>
+                   <p class="text-white" id="sec-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, error dignissimos! Pariatur veniam unde maiores dicta cum laudantium cupiditate, earum ad accusantium reiciendis eveniet dolores voluptate omnis incidunt est magnam quis nisi officiis nihil animi labore tempore ipsum sunt illo. Beatae mollitia at a repellendus consequatur? Officia quos autem obcaecati?</p>
+                  
+                   <button class="btn btn-outline-danger" id="sec-btn">read more</button>
+               </div>
+          </div>
+      </div>
+   </section>
+   <!--end of the section-->
+
+ <!--start the section-->
+ <section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-10 offset-1 offset-md-0 mt-3">
+                <div class="card" id="card-one-one">
+                    <img src="/1.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h1 class="card-title">just love</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cum?</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-danger">read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-10 offset-1 offset-md-0 mt-3">
+             <div class="card" id="card-two-two">
+                 <img src="/1.jpg" alt="" class="img-fluid">
+                 <div class="card-body">
+                     <h1 class="card-title">just love</h1>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cum?</p>
+                 </div>
+                 <div class="card-footer">
+                     <button class="btn btn-outline-danger">read more</button>
+                 </div>
+             </div>
+         </div>
+
+
+         <div class="col-md-4 col-10 offset-1 offset-md-0 mt-3">
+             <div class="card" id="card-three-three">
+                 <img src="/1.jpg" alt="" class="img-fluid">
+                 <div class="card-body">
+                     <h1 class="card-title">just love</h1>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cum?</p>
+                 </div>
+                 <div class="card-footer">
+                     <button class="btn btn-outline-danger">read more</button>
+                 </div>
+             </div>
+         </div>
+        </div>
+    </div>
+</section>
+<!--end of the section-->  
+
+<script>
+ 
+ $(document).ready(function(){
+     $(window).scroll(function(){
+         var positionTop = $(document).scrollTop();
+         console.log(positionTop);
+
+        if((positionTop>608) && (positionTop<1006)){
+            $('#card-one').addClass('animated bounceInLeft  slow');
+            $('#card-two').addClass('animated bounceInUp  slow');
+            $('#card-three').addClass('animated bounceInRight  slow');
+
+        }
+
+        if((positionTop>1390) && (positionTop<1482)){
+            $('#card-one-one').addClass('animated bounceInLeft  slow');
+            $('#card-two-two').addClass('animated bounceInUp  slow');
+            $('#card-three-three').addClass('animated bounceInRight  slow');
+
+        }
+
+        if((positionTop>88) && (positionTop<541)){
+            $('#heading').addClass('animated rollIn  slow');
+            $('#paragraph').addClass('animated rollIn  slow');
+        
+        }
+
+        if((positionTop>1039) && (positionTop<1209)){
+            $('#sec-heading').addClass('animated slideInLeft  slow');
+            $('#sec-para').addClass('animated slideInRight  slow');
+            $('#sec-btn').addClass('animated slideInDown  slow');
+        
+        }
+
+     })
+ })
+
+</script>
+  
+</body>
+</html>
